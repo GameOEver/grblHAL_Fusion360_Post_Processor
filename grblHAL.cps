@@ -851,7 +851,7 @@ function onSection() {
     writeBlock(
       sOutput.format(spindleSpeed), mFormat.format(tool.clockwise ? 3 : 4)
     );
-    writeBlock("G4 P"+properties.spindleDelay.value); //add 2s dwell
+    writeBlock("G4 P"+getProperty("spindleDelay"));
   }
 
   // wcs
